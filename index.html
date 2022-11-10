@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Word Scramble</h1>
+    <div>
+        <H3>Set difficulty level</H3>
+        <input type="range" id="diff" min="1" max="3" step="1" value="1" onchange="updateLevel()"> <br>
+        Level <span id="level_span" > 1 </span>  <br>     <br>
+    </div>
+
+    <div>
+        <button id="play" onclick="play()">Play</button> <br><br>
+
+        <h2><span id="word_span"> </span></h2> <br> 
+
+        <label for="ans">Enter the word</label><br>
+        <input type="text" id="ans"> <br> <br>
+
+        <button id="submit" onclick="submit()"> Submit</button>
+    </div>
+</body>
+</html>
